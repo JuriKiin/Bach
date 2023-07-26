@@ -13,6 +13,7 @@ import com.jurikiin.bach.components.functional.NetworkStatusTracker
 import com.jurikiin.bach.components.ui.Card
 import com.jurikiin.bach.components.ui.H1
 import com.jurikiin.bach.components.ui.H2
+import com.jurikiin.bach.components.ui.H3
 import com.jurikiin.bach.ui.theme.BachTheme
 
 class MainActivity : ComponentActivity() {
@@ -29,6 +30,9 @@ class MainActivity : ComponentActivity() {
                         Card("Network Status") {
                             val connected = if (it) "Connected" else "Offline"
                             H2("Network Status: $connected")
+                        }
+                        Card("Card Example") {
+                            H3("This is the card content")
                         }
                     }
                 }
